@@ -5,7 +5,7 @@ This project presents an interactive Power BI dashboard comparing performance an
 
 The goal is to analyze scoring velocity, boundary tendencies, delivery distributions, and dismissal patterns across different global playing conditions on a normalized timeline.
 
-![Dashboard Overview](dashboard-overview.png)
+![Dashboard Overview](images/dashboard-overview.png)
 
 ---
 
