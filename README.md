@@ -5,12 +5,12 @@ This project presents an interactive Power BI dashboard comparing performance an
 
 The goal is to analyze scoring velocity, boundary tendencies, delivery distributions, and dismissal patterns across different global playing conditions on a normalized timeline.
 
-![Dashboard Overview](image_9a9c3d.jpg)
+![Dashboard Overview](dashboard-overview.png)
 
 ---
 
 ## Data Architecture & ETL Pipeline
-* **Source:** Granular delivery-by-delivery data sourced from [Cricsheet](https://cricsheet.org/).
+* **Source:** Granular delivery-by-delivery data sourced from [Cricsheet](https://cricsheet.org/matches/).
 * **Timeframe Normalization (2023+):** The dataset is scoped from the 2023 season onwards to ensure fair comparability, as leagues like **SA20** and **Major League Cricket (MLC)** debuted in 2023.
 * **Data Processing (Python):** Sourced raw nested JSON match files, extracted delivery attributes, cleaned anomalies, and consolidated them into two relational CSV files for Power BI ingestion.
 * **Data Modeling & DAX:** Custom Data Analysis Expressions (DAX) were engineered for metrics including:
@@ -45,5 +45,6 @@ The goal is to analyze scoring velocity, boundary tendencies, delivery distribut
 ---
 
 ## Repository Contents
-* `*.pbix`: Complete Power BI Report file with visuals, themes, and DAX measures.
-* `data/`: Processed CSV dataset files utilized to feed the report.
+* `t20.pbix`: Complete Power BI Report file with visuals, themes, and DAX measures.
+* `T20-Leagues-Dataset.zip`: The cleaned and consolidated datasets used to power the dashboard (compressed due to file size limits). Extract this folder to access the raw CSV files.
+* `images/`: Folder containing high-resolution screenshots of the main dashboard and league-specific filters.
